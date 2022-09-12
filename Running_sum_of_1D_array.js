@@ -19,3 +19,18 @@ var runningSum = function(nums) {
     }
     return res
 };
+
+
+// second method
+/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */
+var runningSum = function(nums) {
+    let res = [];
+    let temp = 0;
+    for(let i=1 ; i<nums.length; i++) {
+       nums[i] = nums[i-1] + nums [i]
+    }
+    return nums
+};
